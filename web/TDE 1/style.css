@@ -1,11 +1,14 @@
 body {
     background-color: #e4e4e4;
+    overflow-x: hidden;
+    font-size: 1rem;
 }
 
 .header {
     background-image: url('https://livecoins.com.br/wp-content/uploads/2024/02/Dogecoin-doente.jpg');
     background-size: cover;
     height: 600px;
+    width: 100%;
 }
 
 .title-div {
@@ -19,11 +22,12 @@ body {
 
 .h1 {
     background-color: rgba(128, 128, 128, 0.4);
+    color: rgb(255, 255, 255);
     padding: 10px 40px 10px 40px;
 }
 
 .article {
-    padding: 0 20% 0 20%;
+    padding: 10px 20% 10px 20%;
 }
 
 .origem-div {
@@ -36,4 +40,49 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50%;
+}
+
+.cripto {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.text-cripto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+
+.images {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.img {
+    max-width: 50%;
+}
+
+footer {
+    background-color: rgb(104, 102, 102);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #e4e4e4;
+}
+
+footer img {
+    max-width: 40px;
 }
