@@ -4,5 +4,5 @@ Como meu blog é sobre memes, queria colocar uma api que gerasse memes do doge, 
 
 ## Arquitetura
 <p align="center">
-  <img src="/imgs/Diagrama.png" alt="Arquitetura">
+  <img src="https://github.com/MarcoBosc/aula-web/blob/main/web/TDE%203%20-%20GRID%20%2B%20JS/imgs/Diagrama.png" alt="Arquitetura">
 </p>
