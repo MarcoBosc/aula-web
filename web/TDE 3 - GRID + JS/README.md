@@ -46,5 +46,5 @@ try {
 
 ## Exemplo de imagem de retorno
 <p align="center">
-  <img src="/imgs/image.png" alt="Arquitetura">
+  <img src="https://github.com/MarcoBosc/aula-web/blob/main/web/TDE%203%20-%20GRID%20%2B%20JS/imgs/image.png" alt="Arquitetura">
 </p>
