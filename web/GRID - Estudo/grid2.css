@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 50px);
+    gap: 2px;
+
+    align-content: center;
+}
+
+div {
+    background-color: purple;
+}

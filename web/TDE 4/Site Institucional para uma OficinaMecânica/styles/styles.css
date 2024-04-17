@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #ebebeb;
+    --cor-secundária: #085494;
+    --cor-cinza: rgb(245, 242, 242);
+}
+
+header {
+    background-color: var(--cor-secundária);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1vh;
+}
+
+.header {
+    padding: 3vw 0 3vw 0;
+}
+
+h2 {
+    font-size: 1.3vw;
+}
+
+h3 {
+    font-size: 1vw;
+    line-height: 0;
+}
+
+p {
+    font-size: 1vw;
+}
+
+.content {
+    display: flex;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--cor-primaria);
+    gap: 2vw;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.contato {
+    display: flex;
+    gap: 3vw;
+}
+
+.button {
+    color: var(--cor-primaria);
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid var(--cor-primaria);
+    padding: 1vw;
+    font-size: 1vw;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-cinza);
+    padding: 3vw;
+    gap: 3vw;
+}
+
+.sobre {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.article-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+    font-size: 1vw;
+}
+
+.article-text h1 {
+    font-size: 2vw;
+    display: inline-block;
+}
+
+.hr {
+    background-color: var(--cor-secundária);
+    height: .5vw;
+    margin-top: -6%;
+    width: 10%;
+    color: transparent;
+}
+
+.article-img {
+    margin-top: 6%;
+    width: 30%;
+}
+
+.mecanica {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .article-text {
+        gap: 1vw;
+    }
+
+    .article-img {
+        width: 40%;
+    }
+
+    .article-text h1 {
+        font-size: 2.5vw;
+    }
+
+    .article-text p{
+        font-size: 1.2vw;
+        margin-bottom: 2px;
+    }
+
+    header {
+        line-height: auto;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6vw;
+        
+    }
+
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .contato {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button {
+        border-radius: 5px;
+        border: .5px solid var(--cor-primaria);
+        height: 5vw;
+        width: 20vw;
+    }
+
+    .phone p {
+        margin: 1vw;
+    }
+
+    header p {
+        margin-bottom: 0;
+    }
+}

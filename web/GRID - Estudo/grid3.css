@@ -1,0 +1,17 @@
+body {
+    display: grid;
+
+    height: 100vh;
+
+    place-items: center;
+}
+
+#app {
+    outline: 1px solid red;
+
+    height: 40vh;
+    width: 40vw;
+
+    display: grid;
+    place-items: center;
+}
