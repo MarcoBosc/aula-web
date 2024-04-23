@@ -1,9 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --cor-primaria: #ebebeb;
     --cor-secundária: #085494;
@@ -19,7 +13,7 @@ header {
 }
 
 .header {
-    padding: 3vw 0 3vw 0;
+    padding: 3vw;
 }
 
 h2 {
@@ -52,6 +46,11 @@ p {
 .contato {
     display: flex;
     gap: 3vw;
+    width: 40%;
+}
+
+.phone {
+    width: 50%;
 }
 
 .button {
@@ -61,7 +60,10 @@ p {
     border: 1px solid var(--cor-primaria);
     padding: 1vw;
     font-size: 1vw;
+    width: 50%;
+    font-size: .8vw;
 }
+
 
 article {
     display: flex;
@@ -95,7 +97,7 @@ article {
 
 .hr {
     background-color: var(--cor-secundária);
-    height: .5vw;
+    height: .2vw;
     margin-top: -6%;
     width: 10%;
     color: transparent;
@@ -110,7 +112,148 @@ article {
     width: 100%;
 }
 
+
+.article-2 {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white
+}
+
+.article-2-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.article-2-text h1 {
+    margin-bottom: 6.5%;
+    font-size: 4vh;
+}
+
+.article-2-text p {
+    margin-bottom: 6.5%;
+    font-size: 2.5vh;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2%;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image h3 {
+    margin-top: 5%;
+}
+
+.image img {
+    height: 25vh;
+    width: 35vh;
+    border-radius: 5%;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--cor-secundária);
+    color: white;
+    padding-top: 5%;
+}
+
+.section h1 {
+    margin-bottom: 6.5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form, input, textarea {
+    width: 85%;
+    border-radius: 5px;
+    border: none;
+}
+
+input, textarea {
+    height: 2vw;
+}
+
+textarea {
+    height: 6vw;
+}
+
+form label, button {
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-top: 2%;
+    color: rgb(204, 204, 4);
+}
+
+form button {
+    background-color: rgb(204, 204, 4);
+    border-radius: 5px;
+    border: none;
+    color: black;
+    width: 7%;
+    height: 2vw;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-secundária);
+    color: white;
+    padding: 5% 18% 0 18%;
+}
+
+.address p, .social-media p {
+    margin: 0;
+}
+
+.image:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.image img:hover {
+    border: 4px solid var(--cor-secundária);
+}
+
 @media (max-width: 768px) {
+
+    input, textarea {
+        height: 4vw;
+    }
+    textarea {
+        height: 8vw;
+    }
+    
+    form button {
+        width: 20%;
+        height: 8vw;
+    }
+
     .article-text {
         gap: 1vw;
     }
@@ -123,8 +266,8 @@ article {
         font-size: 2.5vw;
     }
 
-    .article-text p{
-        font-size: 1.2vw;
+    .article-text p {
+        font-size: 1.8vw;
         margin-bottom: 2px;
     }
 
@@ -137,8 +280,8 @@ article {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 6vw;
-        
+        gap: 0;
+        padding: 3vw 0 3vw 0;
     }
 
     .header-text {
@@ -148,13 +291,30 @@ article {
         align-items: flex-start;
         padding: 0;
         margin-bottom: 0;
+        width: 70%;
+    }
+
+    h2 {
+        font-size: 1.8vw;
+    }
+
+    h3 {
+        font-size: 1.5vw;
+        line-height: 0;
+    }
+
+    p {
+        font-size: 1.8vw;
     }
 
     .contato {
         height: 100%;
+        width: 50%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 0;
     }
 
     .button {
@@ -162,13 +322,63 @@ article {
         border: .5px solid var(--cor-primaria);
         height: 5vw;
         width: 20vw;
+        font-size: 1.5vw;
+    }
+
+    .phone {
+        width: 50%;
+        gap: 0;
     }
 
     .phone p {
-        margin: 1vw;
+        margin-bottom: 8%;
     }
 
     header p {
         margin-bottom: 0;
     }
+
+    .logo {
+        height: 5vh;
+        width: auto;
+    }
+
+    .hr {
+        margin-top: -8%;
+    }
+
+    .hr2 {
+        width: 3vh;
+        margin-top: -6.5%;
+        margin-bottom: 2%;
+    }
+
+    .article-2 {
+        margin-top: 1vh;
+    }
+
+    .article-2-text {
+        width: 100%;
+    }
+
+    .article-2-text h1 {
+        margin-bottom: 6.8%;
+        font-size: 1.5vh;
+    }
+    
+    .article-2-text p {
+        margin-bottom: 6.5%;
+        font-size: .9vh;
+    }
+
+    .image h3 {
+        margin-top: 2%;
+    }
+    
+    .image img {
+        height: 10vh;
+        width: 20vh;
+        border-radius: 5%;
+    }
+
 }
