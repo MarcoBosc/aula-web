@@ -87,7 +87,7 @@ article {
     flex-direction: column;
     justify-content: center;
     gap: 2vw;
-    font-size: 1vw;
+    font-size: 3vh;
 }
 
 .article-text h1 {
@@ -137,7 +137,7 @@ article {
 
 .article-2-text p {
     margin-bottom: 6.5%;
-    font-size: 2.5vh;
+    font-size: 1.5rem;
 }
 
 .images {
@@ -224,11 +224,15 @@ footer {
     justify-content: space-between;
     background-color: var(--cor-secundária);
     color: white;
-    padding: 5% 18% 0 18%;
+    padding: 5% 18% 2% 18%;
 }
 
 .address p, .social-media p {
     margin: 0;
+}
+
+section h1 {
+    font-size: 2.3rem;
 }
 
 .image:hover {
@@ -241,6 +245,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    section h1 {
+        font-size: 1rem;
+    }    
 
     input, textarea {
         height: 4vw;
@@ -262,12 +270,7 @@ footer {
         width: 40%;
     }
 
-    .article-text h1 {
-        font-size: 2.5vw;
-    }
-
     .article-text p {
-        font-size: 1.8vw;
         margin-bottom: 2px;
     }
 
